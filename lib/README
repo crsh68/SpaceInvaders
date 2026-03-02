@@ -1,0 +1,9 @@
+# Lib Folder
+
+This folder is for project-specific (private) libraries.
+
+This project uses:
+- r65emu (from GitHub - automatically downloaded)
+- TFT_eSPI (from PlatformIO registry - automatically downloaded)
+
+No custom libraries needed in this folder.
