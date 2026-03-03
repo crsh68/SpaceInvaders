@@ -1,0 +1,12 @@
+{
+  "name": "r65emu",
+  "version": "1.0.0",
+  "description": "Local r65emu implementation for Space Invaders - includes i8080 CPU emulator, memory management, and ports interface",
+  "keywords": ["emulator", "i8080", "retro", "cpu"],
+  "authors": {
+    "name": "Local Implementation"
+  },
+  "license": "MIT",
+  "frameworks": "arduino",
+  "platforms": "*"
+}

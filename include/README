@@ -1,0 +1,5 @@
+# Include Folder
+
+This folder is for project header files.
+
+For this project, all headers are in `src/` folder along with implementation files.
