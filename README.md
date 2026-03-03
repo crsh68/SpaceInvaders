@@ -42,7 +42,7 @@ GPIO10    ->  COIN
 GPIO8     ->  START
 ```
 
-### Zvuk (Opciono)
+### Zvuk MAX98357A I2S
 ```
 GPIO7  = BCLK
 GPIO20 = LRCLK
