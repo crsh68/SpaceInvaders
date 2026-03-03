@@ -29,25 +29,24 @@ Ovo je **Port originalnog ESP8266 Space Invaders projekta** za ESP32-C3 Super Mi
 ESP32-C3  ->  ST7789
 GPIO4     ->  MOSI
 GPIO5     ->  SCLK
-GPIO7     ->  CS
 GPIO6     ->  DC
 GPIO1     ->  RST
-GPIO9     ->  LED (backlight)
 ```
 
 ### Kontrole (Tipke)
 ```
 GPIO2     ->  LEFT
 GPIO3     ->  RIGHT
-GPIO10    ->  FIRE
-GPIO20    ->  COIN
-GPIO21    ->  START
-GPIO0     ->  PAUSE (BOOT button)
+GPIO9     ->  FIRE
+GPIO10    ->  COIN
+GPIO8     ->  START
 ```
 
 ### Zvuk (Opciono)
 ```
-GPIO8  ->  100Ω  ->  Speaker (8Ω)  ->  GND
+GPIO7  = BCLK
+GPIO20 = LRCLK
+GPIO21 = DIN
 ```
 
 ---
