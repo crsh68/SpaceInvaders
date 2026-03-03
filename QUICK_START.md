@@ -49,7 +49,7 @@
    ILI
    Terminal → Run Task → PlatformIO: Upload
 
-2. VAŽNO: Drži BOOT tipku (GPIO0) na ESP32-C3
+2. VAŽNO: Drži BOOT tipku (GPIO9) na ESP32-C3
    - Čim vidiš "Connecting..."
    - Pusti BOOT tipku
    
@@ -65,8 +65,8 @@
    Hardware initialized
    Game ready!
 
-4. COIN (GPIO20) → Ubaci kredit
-5. START (GPIO21) → Započni igru
+4. COIN (GPIO10) → Ubaci kredit
+5. START (GPIO8) → Započni igru
 6. LEFT/RIGHT/FIRE → Igraj!
 ```
 
@@ -116,10 +116,10 @@ Dodaj:
 #define TFT_HEIGHT 240
 #define TFT_MOSI 4
 #define TFT_SCLK 5
-#define TFT_CS   7
+//#define TFT_CS   7  // displej nema CS pin
 #define TFT_DC   6
 #define TFT_RST  1
-#define SPI_FREQUENCY 80000000
+#define SPI_FREQUENCY 40000000
 ```
 
 ### 4. Kompajliraj i Upload (2 min)
@@ -175,10 +175,10 @@ Prije nego što pokreneš:
 ```
 GPIO2  (LEFT)   → Lijevo
 GPIO3  (RIGHT)  → Desno
-GPIO10 (FIRE)   → Pucaj
-GPIO20 (COIN)   → Kredit
-GPIO21 (START)  → Start
-GPIO0  (PAUSE)  → Pauza (BOOT button)
+GPIO9  (FIRE)   → Pucaj
+GPIO10 (COIN)   → Kredit
+GPIO8  (START)  → Start
+
 ```
 
 ---
