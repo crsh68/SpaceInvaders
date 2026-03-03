@@ -131,19 +131,6 @@ Edituj `platformio.ini` build_flags:
 
 ---
 
-## 🎮 Kontrole
-
-```
-LEFT   - Pomjeri brod lijevo
-RIGHT  - Pomjeri brod desno
-FIRE   - Pucaj
-COIN   - Ubaci novčić (kredit)
-START  - Započni igru
-PAUSE  - Pauziraj/nastavi
-```
-
----
-
 ## 📊 Performanse
 
 | Feature | ESP8266 | ESP32-C3 |
