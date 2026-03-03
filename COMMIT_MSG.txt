@@ -1,0 +1,19 @@
+fix: rewrite audio engine - FreeRTOS task + multi-channel mixer
+
+Problem: audio jitter i prijevremeni kraj zvukova uzrokovan
+SPI display transferima koji blokiraju main loop (25-30ms lag).
+
+Rješenje:
+- Dedicated FreeRTOS audio task (prioritet 2) koji puni I2S DMA
+  buffer neovisno od loop() - zvuk više ne ovisi o brzini main loopa
+- 4 neovisna miksana kanala:
+    _chUfo     - kontinuirani loop dok UFO leti (LoopChannel)
+    _chBasehit - eksplozija igrača, izoliran kanal
+    _chEffects - shot, invhit, extend, ufohit
+    _chWalk    - fleet movement beepovi
+- Edge detection na portovima 3 i 5 - sprječava višestruko
+  triggiranje jer ROM drži bitove HIGH više frameova
+- Mutex zaštita između audio taska i main loop-a (out())
+
+Rezultat: svi zvukovi traju punom duljinom, walk beepovi se
+čuju u ispravnom ritmu, UFO svira cijelo vrijeme preleta
