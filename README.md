@@ -6,7 +6,7 @@ Ovo je **Port originalnog ESP8266 Space Invaders projekta** za ESP32-C3 Super Mi
 
 ---
 
-## ✅ Što Je Novo
+## ✅ Što je novo
 
 - ✅ **ESP32-C3 Super Mini** podrška
 - ✅ **ST7789 240x240** display
@@ -57,7 +57,7 @@ GPIO21 = DIN
 - **VS Code:** Install "PlatformIO IDE" extension
 - Ili: https://platformio.org/install
 
-### 2. Otvori Projekat
+### 2. Otvori projekt
 ```bash
 # U VS Code:
 File → Open Folder → Odaberi "SpaceInvaders_ESP32C3_Final" folder
