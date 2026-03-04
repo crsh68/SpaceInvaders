@@ -32,15 +32,15 @@
 ┌──────────────────────────────────────────┐
 │     ST7789 TFT Display (240x240)         │
 │                                          │
-│  VCC  ─── 3.3V                           │
-│  GND  ─── GND                            │
-│  CS   ─── GPIO7                          │
-│  RST  ─── GPIO1                          │
-│  DC   ─── GPIO6                          │
-│  MOSI ─── GPIO4 (SDA)                    │
-│  SCK  ─── GPIO5 (CLK)                    │
-│  LED  ─── GPIO9 (opciono - ili 3.3V)     │
-│  MISO ─── (ne koristi se)                │
+│  VCC  ──────────────────────────── 3.3V  │
+│  GND  ───────────────────────────── GND  │
+│  CS   ───────────────── (ne koristi se)  │
+│  RST  ─────────────────────────── GPIO1  │
+│  DC   ─────────────────────────── GPIO6  │
+│  MOSI ───────────────────── GPIO4 (SDA)  │
+│  SCK  ───────────────────── GPIO5 (CLK)  │
+│  BKL  ──────────────────────────── 3.3V  │
+│  MISO ───────────────── (ne koristi se)  │
 │                                          │
 └──────────────────────────────────────────┘
 
@@ -58,19 +58,18 @@
 ┌──────────────────────────────────────────┐
 │           ZVUK  MAX98357A I2S            │
 │                                          │
-│  GPIO7  ───── BCLK                       │
-│  GPIO20 ───── LRCLK                      │
-│  GPIO21 ───── DIN                        │
+│  GPIO7  ─────────────────────── BCLK     │
+│  GPIO20 ────────────────────── LRCLK     │
+│  GPIO21 ─────────────────────── DIN      │
 └──────────────────────────────────────────┘
 ```
 
 ## Napomene:
 
 1. **INPUT_PULLUP** - Svi GPIO pinovi sa ● su INPUT_PULLUP
-2. **SPI Pins** - GPIO 4, 5, 6, 7 su optimalni za hardware SPI
-3. **Speaker** - Kondenzator 100µF blokira DC offset
-4. **LED Backlight** - Može biti direktno na 3.3V ako nemaš PWM
-5. **BOOT Button** - GPIO8 je već na ploči kao BOOT tipka
+2. **SPI Pins** - GPIO 4, 5, 6 su optimalni za hardware SPI
+3. **LED Backlight** - Može biti direktno na 3.3V ako nemaš PWM
+4. **BOOT Button** - GPIO9 je već na ploči kao BOOT tipka
 
 ## Preporučeni Kablovi:
 
