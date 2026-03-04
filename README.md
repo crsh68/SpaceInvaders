@@ -139,7 +139,7 @@ Edituj `platformio.ini` build_flags:
 | RAM | 80KB | 400KB |
 | SPI Max | 40MHz | 80MHz |
 | FPS | 30-40 | 60+ |
-| Audio | DAC | PWM |
+| Audio | DAC | I2S |
 
 ---
 
