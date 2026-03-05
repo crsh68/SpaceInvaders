@@ -92,7 +92,7 @@ void Display::clear() {
 }
 
 void Display::draw(Memory::address a, uint8_t b) {
-    uint16_t y = ((DISPLAY_Y - ((a % BYTES_PER_LINE) * 8))-8)*240/256;    // * 240 / 256;
+    uint16_t y = ((DISPLAY_Y - ((a % BYTES_PER_LINE) * 8))-8)*252/256;    // * 252 / 256; fine tuning
     uint16_t x = (a / BYTES_PER_LINE);
 
     uint8_t d = _buf[a] ^ b;
@@ -100,13 +100,18 @@ void Display::draw(Memory::address a, uint8_t b) {
         if (d & bit) {
             uint16_t fg = C_WHITE;
             uint16_t yi = y - i;
-            if (yi > 24+240/256 && yi <= 56*240/256)    
+            if (yi > 23 && yi < 55)                            // (yi > 24+252/256 && yi <= 56*252/256)    
                 fg = C_RED;
-            else if (yi > 176*240/256 && yi <= 232*240/256)
+            else if (yi > 173 && yi < 228)                     // (yi > 176*252/256 && yi <= 232*252/256)
                 fg = C_GREEN;
-            else if (yi > 232*240/256 && x >= 16 && x < 134)
+            else if (yi > 228 && x >= 16 && x < 134)           // (yi > 232*252/256 && x >= 16 && x < 134)
                 fg = C_GREEN;
-            st7789_drawPixel(x + _xoff, yi + _yoff, (b & bit) ? fg : C_BLACK);
+            st7789_drawPixel(x + _xoff, yi + _yoff, (b & bit) ? fg : C_BLACK); // ekran 0°
+            // ---------------------------------------------------------------
+            // uint16_t rx = 239 - (x + _xoff);
+            // uint16_t ry = 239 - (yi + _yoff);                               // ekran 180°
+            // st7789_drawPixel(rx, ry, (b & bit) ? fg : C_BLACK);
+            // ---------------------------------------------------------------
         }
     }
     _buf[a] = b;
