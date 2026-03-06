@@ -44,9 +44,9 @@ GPIO8     ->  START
 
 ### Zvuk MAX98357A I2S
 ```
-GPIO7  = BCLK
-GPIO20 = LRCLK
-GPIO21 = DIN
+GPIO7  -> BCLK
+GPIO20 -> LRCLK
+GPIO21 -> DIN
 ```
 
 ---
