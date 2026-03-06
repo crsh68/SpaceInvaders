@@ -33,7 +33,7 @@ lib/r65emu/
 - **Garantovano radi** - testirana lokalna verzija
 - **Brža kompilacija** - ne čeka GitHub download
 
-### 📦 Što Instali Платrat:
+### 📦 Što Treba Instalirati:
 
 **Samo TFT_eSPI!**
 
