@@ -114,7 +114,7 @@ Sve je već konfigurirano:
 
 ### Promjena GPIO Pinova
 
-Edituj `platformio.ini` build_flags:
+Editiraj `platformio.ini` build_flags:
 ```ini
 -D PIN_LEFT=2
 -D PIN_RIGHT=3
