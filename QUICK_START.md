@@ -27,8 +27,8 @@
    Terminal → Run Task → PlatformIO: Build
 
 2. PRVA KOMPILACIJA:
-   - Downloaduje r65emu sa GitHub-a
-   - Downloaduje TFT_eSPI
+   - Download r65emu sa GitHub-a
+   - Download TFT_eSPI
    - Kompajlira kod
    - Traje ~2-3 minute
 
@@ -38,7 +38,7 @@
 ### 4. Spoji Hardware (1 min)
 ```
 1. Spoji ESP32-C3 USB-C kablom
-2. Provjeři da li Windows vidi COM port
+2. Provjeri da li Windows vidi COM port
    - Device Manager → Ports
    - Trebao bi vidjeti "USB Serial Device (COMx)"
 ```
@@ -74,7 +74,7 @@
 
 ## 📱 Za Arduino IDE
 
-### 1. Konvertuj Projekat (2 min)
+### 1. Konvertiraj Projekt (2 min)
 ```bash
 # Kopiraj sve iz src/ foldera
 # U novi Arduino sketch folder nazvan "SpaceInvaders_ESP32C3"
@@ -162,7 +162,7 @@ Prije nego što pokreneš:
 
 - [ ] PlatformIO IDE instaliran
 - [ ] Projekat otvoren u VS Code
-- [ ] Kompajlacija uspješna
+- [ ] Kompajliranje uspješno
 - [ ] ESP32-C3 spojen USB-om
 - [ ] TFT display spojen (MOSI=4, SCLK=5, CS=7, DC=6, RST=1)
 - [ ] Tipke spojene (LEFT=2, RIGHT=3, FIRE=10, COIN=20, START=21)
