@@ -30,7 +30,7 @@ lib/r65emu/
 ### ✅ PREDNOSTI:
 - **NE trebaju vanjske biblioteke** (osim TFT_eSPI)
 - **Sve već uključeno** - samo otvori i kompajliraj
-- **Garantovano radi** - testirana lokalna verzija
+- **Garantirano radi** - testirana lokalna verzija
 - **Brža kompilacija** - ne čeka GitHub download
 
 ### 📦 Što Treba Instalirati:
@@ -58,9 +58,9 @@ r65emu je **već lokalno** u `lib/` folderu!
 - Svi include-ovi ažurirani
 
 ### Greška: "hw/user.h not configured!"
-**Ignoriši - Warning, ne Error!**
+**Ignoriraj - Warning, ne Error!**
 - Ovo je samo warning iz starog r65emu koda
-- Ne utiče na funkcionalnost
+- Ne utječe na funkcionalnost
 
 ---
 
