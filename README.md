@@ -72,7 +72,7 @@ cd SpaceInvaders_ESP32C3_Final
 # Ili:
 pio run
 
-# Prva kompilacija će automatski downloadovati:
+# Prva kompilacija će automatski downloadati:
 # - r65emu biblioteku sa GitHub-a
 # - TFT_eSPI biblioteku
 # Može trajati 2-3 minute!
